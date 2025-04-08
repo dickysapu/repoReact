@@ -1,4 +1,4 @@
-import aboutImg from "../assets/about.jpg";
+import aboutImg from "../assets/aboutimg.jpg";
 import { ABOUT_TEXT } from "../constants";
 const About = () => {
   return (
@@ -8,14 +8,12 @@ const About = () => {
         <span className="text-neutral-500">Me</span>
       </h1>
       <div className="flex flex-wrap">
-        <div className="w-full lg:w-1/2 lg:p-8">
-          <div className="flex items-center justify-center">
-            <img className="rounded-2xl" src={aboutImg} alt="about" />
-          </div>
+        <div className="w-full lg:w-1/2 lg:p-8 flex justify-center">
+          <img className="rounded-3xl max-w-md" src={aboutImg} alt="about" />
         </div>
-        <div className="w-full lg:w-1/2">
-          <div className="flex justify-center lg:justify-start">
-            <p className="my-2 max-w-xl py-6">{ABOUT_TEXT}</p>
+        <div className="w-full lg:w-1/2 flex justify-center lg:justify-start">
+          <div className="lg:pl-8">
+            <p className="my-2 max-w-md py-6">{ABOUT_TEXT}</p>
           </div>
         </div>
       </div>
